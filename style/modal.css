@@ -112,10 +112,10 @@
 
 
 .comment-delete-icon{
-    background-image: url("/webgallery/media/comment-delete.png");
+    background-image: url("webgallery/media/comment-delete.png");
 }
 .comment-delete-icon:hover{
-    background-image: url("/webgallery/media/comment-delete-active.png");
+    background-image: url("webgallery/media/comment-delete-active.png");
 }
 
 #modal-comments-previous {
