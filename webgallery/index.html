@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Web Gallery</title>
+        <link href="style/collapsible.css" rel="stylesheet" type="text/css" />
+        <link href="style/modal.css" rel="stylesheet" type="text/css" />
+        <link href="style/main.css" rel="stylesheet" type="text/css" />
+        <link href="style/slider.css" rel="stylesheet" type="text/css" />
+        <script type="module" src="js/index.mjs"></script>
+    </head>
+    <body>
+        <header>
+            <div id="title-icon"></div>
+            <h1 id="title">Piktogal</h1>
+        </header>
+
+        <!-- collapsible-panel component -->
+        <button class="collapsible" id="collapsible-button">
+            <h3>Add to Gallery</h3>
+            <div class="icon" id="collapsible-icon"></div>
+        </button>
+        <form id="add-image-form" class="horizontal-form" style="visibility: hidden;">
+            <div id="image-form-fields">
+                <div class="image-form-field">
+                    <h3 class="form-field-header">Name:</h3>
+                    <input
+                    type="text"
+                    id="image_author"
+                    class="form-element"
+                    placeholder="Enter your name"
+                    name="image_author"
+                    required
+                    />
+                </div>
+                <div class="image-form-field">
+                    <h3 class="form-field-header" >Image title:</h3>
+                    <input
+                    type="text"
+                    id="image_title"
+                    class="form-element"
+                    placeholder="Enter your image title"
+                    name="image_title"
+                    required
+                    />
+                </div>
+                <div class="image-form-field">
+                    <h3 class="form-field-header">Image URL:</h3>
+                    <input
+                    type="text"
+                    id="image_url"
+                    class="form-element"
+                    placeholder="Enter your image url"
+                    name="image_url"
+                    required
+                    />
+                </div>
+            </div>
+            <button type="submit" class="form-button">Add Image</button>
+        </form>
+
+
+        <!-- image slider display component -->
+        <!-- <div id="image-slider">
+            <div id="previous-icon" class="icon"></div>
+            <div id="image-info-container">
+                <h3 id="image-display-title">
+                    some_title
+                </h3>
+                <img src="https://www.healthyeating.org/images/default-source/home-0.0/nutrition-topics-2.0/general-nutrition-wellness/2-2-2-3foodgroups_fruits_detailfeature.jpg?sfvrsn=64942d53_4" id="image-display">
+                </img>
+                <div class="image-display-footer">
+                    <h3 id="image-display-author"> By some_author</h3>
+                    <button id="comment-button">comment</button>
+                    <div class="delete-icon icon"></div>
+                </div>
+            </div>
+            <div id="next-icon" class="icon"></div>
+        </div> -->
+
+        
+        <!-- comment modal display component -->
+        <!-- <div id="modal-container">
+          <div id="modal-display">
+            <img src="https://www.healthyeating.org/images/default-source/home-0.0/nutrition-topics-2.0/general-nutrition-wellness/2-2-2-3foodgroups_fruits_detailfeature.jpg?sfvrsn=64942d53_4" id="modal-image-display"></img>
+            <div id="modal-comment-content">
+              <div id="back-button-wrapper">
+                <button id="back-button">back</button>
+              </div>
+              <form id="modal-comment-form">
+                <div class="modal-form-field">
+                  <h3 class="modal-form-field-header form-field-header" >Name:</h3>
+                  <input
+                  type="text"
+                  id="comment_name"
+                  class="form-element"
+                  placeholder="Enter your name"
+                  name="user_comment"
+                  required
+                  />
+                </div>
+                <div class="modal-form-field">
+                  <h3 class="modal-form-field-header form-field-header" >Content:</h3>
+                  <textarea
+                    rows="5"
+                    id="comment_form_content"
+                    class="form_element"
+                    name="user_message"
+                    placeholder="Enter your comment here..."
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="form-button">Post your comment</button>
+              </form>
+              <div id="modal-comments-wrapper">
+                <div id="modal-comments">
+
+                  <div class="comment" id="{comment_id}">
+                    <div class="comment-user-info">
+                      <img class="comment-picture" src="/webgallery/media/user_profile_picture.png"></img>
+                      <p>Author</p>
+                    </div>
+                    <div class="comment-content"> temp content </div>
+                  </div>
+               
+                <div id="modal-comments-footer">
+                  <button id="modal-comments-previous">prev</button>
+                  <button id="modal-comments-next">next</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+
+
+        <footer>
+            <a id="credits" href="credits.html">credits</a>
+        </footer>
+    </body>
+</html>
+
+<!-- 
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Microblog</title>
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+    <link href="style/messages.css" rel="stylesheet" type="text/css" />
+    <link href="style/form.css" rel="stylesheet" type="text/css" />
+    <script type="module" src="js/index.mjs"></script> 
+  </head>
+  <body>
+    <header>
+      <a href="/" id="title">Microblog</a>
+    </header>
+
+    <form class="complex_form" id="create_message_form">
+      <div class="form_title">Post a message</div>
+      <input
+        type="text"
+        id="post_name"
+        class="form_element"
+        placeholder="Enter your name"
+        name="user_name"
+        required
+      />
+      <textarea
+        rows="5"
+        id="post_content"
+        class="form_element"
+        name="user_message"
+        placeholder="Enter your message"
+        required
+      ></textarea>
+      <button type="submit" class="btn">Post your message</button>
+    </form>
+
+    <div id="messages">
+      <div class="message">
+            <div class="message_user">
+                    <img class="message_picture" src="uploads/alice.png">
+                    <div class="message_username">Alice</div>
+            </div>
+            <div class="message_content">This microblog is way better than Piazza!</div>
+            <div class="downvote-icon icon">0</div><div class="upvote-icon icon">0</div>
+            <div class="delete-icon icon"></div>
+      </div>
+      <div class="message">
+          <div class="message_user">
+              <img class="message_picture" src="uploads/bob.png">
+              <div class="message_username">Bob</div>
+          </div>
+          <div class="message_content">Welcome to CSCC09!</div>
+          <div class="downvote-icon icon">0</div>
+          <div class="upvote-icon icon">0</div>
+          <div class="delete-icon icon"></div>
+        </div>
+    </div>
+
+    <footer>
+      <a href="/credits.html">credits</a>
+    </footer>
+  </body>
+</html> -->
