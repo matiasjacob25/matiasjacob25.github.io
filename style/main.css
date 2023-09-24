@@ -61,7 +61,7 @@ input {
 
 
 #title-icon {
-    background-image: url("../media/camera_icon.gif");
+    background-image: url("webgallery/media/camera_icon.gif");
     background-size: cover;
     background-repeat: repeat;
     min-height: 150px;
