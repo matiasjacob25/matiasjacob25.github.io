@@ -376,9 +376,9 @@ document.getElementById("collapsible-button").onclick = () => {
     const elem = document.getElementById("collapsible-icon");
     const img_path = window.getComputedStyle(elem).backgroundImage;
     if (img_path.includes("/media/collapse-down.png")) {
-        elem.style.backgroundImage = "url(media/collapse-up.png)";
+        elem.style.backgroundImage = "url(/webgallery/media/collapse-up.png)";
     } else {
-        elem.style.backgroundImage = "url(media/collapse-down.png)";
+        elem.style.backgroundImage = "url(/webgallery/media/collapse-down.png)";
     }
 };
 
