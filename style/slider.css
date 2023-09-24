@@ -12,7 +12,7 @@
     min-height: 60px;
 }
 #previous-icon:hover{
-    background-image: url("webgallery/media/left-arrow-icon-active.png");
+    background-image: url("webgallery/media/left-arrow-active.png");
 }
 
 #next-icon {
