@@ -1,26 +1,26 @@
 .delete-icon{
-    background-image: url("webgallery/media/garbage-icon-closed.gif");
+    background-image: url("../webgallery/media/garbage-icon-closed.gif");
     min-height: 50px;
 }
 
 .delete-icon:hover{
-    background-image: url("webgallery/media/garbage-icon-open.png");
+    background-image: url("../webgallery/media/garbage-icon-open.png");
 }
 
 #previous-icon {
-    background-image: url("webgallery/media/left-arrow-icon.png");
+    background-image: url("../webgallery/media/left-arrow-icon.png");
     min-height: 60px;
 }
 #previous-icon:hover{
-    background-image: url("webgallery/media/left-arrow-active.png");
+    background-image: url("../webgallery/media/left-arrow-active.png");
 }
 
 #next-icon {
-    background-image: url("webgallery/media/right-arrow-icon.png");
+    background-image: url("../webgallery/media/right-arrow-icon.png");
     min-height: 60px;
 }
 #next-icon:hover{
-    background-image: url("webgallery/media/right-arrow-icon-active.png");
+    background-image: url("../webgallery/media/right-arrow-icon-active.png");
 }
 
 #image-slider {
